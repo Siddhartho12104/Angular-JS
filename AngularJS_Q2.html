@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS Q2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var myapp=angular.module("myappp",[]);
+		myapp.controller("mycontroller", function($scope){ 
+			$scope.person={ Name: " Siddhartho Das " ,LastName: " Das " }
+		});
+		
+	</script>
+</head>
+<body>
+	<div ng-app="myappp" ng-controller="mycontroller">
+		<h4><font face="calibri"> Name : </font></h4> <h4 ng-bind="person.Name"></h4> 
+		<h4><font face="calibri"> Last Name : </font></h4> <h4 ng-bind="person.LastName"></h4> 
+	</div>
+
+</body>
+</html>

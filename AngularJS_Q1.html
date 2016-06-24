@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AngularJs Q1</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var mod=angular.module("myApp",[]);
+		mod.controller("MyCtrl",function($scope){
+			$scope.person={
+				FirstName:" " , LastName: " "
+			};
+		});
+	</script>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="MyCtrl">
+		<form action="#">
+			Enter first name : <input type="text" ng-model="person.FirstName"></input><br><br>
+			Enter last name :&nbsp <input type="text"  ng-model="person.LastName"></input><br><br>
+			<input type="Submit" value="Click Here" bo>
+			</input>
+			<br><br><br>
+		</form>
+
+		<table border="2px solid green" bgcolor="lightgreen">
+			<thead>
+				<th><font face = "calibri">Details</font> </th>
+				<th><font face = "calibri">Values</font></th>
+
+			</thead>
+			<tbody>
+				<tr>
+					<td ng-bind="person.FirstName"> &nbsp </td>
+					<td ng-bind="person.LastName"> &nbsp </td>
+				</tr>
+
+			</tbody>
+		</table>
+
+	</div>
+</body>
+</html>
