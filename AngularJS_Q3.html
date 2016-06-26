@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Angular JS Q3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var module= angular.module("myapp",[]);
+		module.controller("mycon",function($scope){
+			$scope.message="Hello World";
+		});
+		
+	</script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="mycon">
+		<h3><font face="calibri">{{ message }}</font></h3>
+	</div>
+
+</body>
+</html>

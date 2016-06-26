@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AngularJS Q5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var module=angular.module("myapp",[]);
+		module.controller("con",function($scope){
+			$scope.Name="Siddhartho Das";
+			$scope.emp="104";
+			$scope.des="SDE";
+		});
+		
+	</script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="con">
+				 <h2><font face="calibri" color="red">Name : </font> {{ Name }} </h2>
+				 <br><br>
+			
+				 <h2><font face="calibri" color="red"> EmployeeID : </font>{{ emp }}</h2>
+				 <br><br>
+
+			
+				 <h2><font face="calibri" color="red"> Designation : </font>{{ des }} </h2>
+
+			
+
+	</div>
+
+</body>
+</html>

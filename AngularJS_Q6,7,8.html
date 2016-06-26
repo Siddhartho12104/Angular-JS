@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> AngularJS Q6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript">
+		var mod=angular.module("myapp",[]);
+		mod.controller("c1",function($scope){
+			$scope.Name="Nice variable";
+			$scope.clickfun=function(){
+				alert("This is single click event demonstration");
+			}
+			$scope.dblclickfun=function(){
+				alert("This is double click event demonstration");
+			}
+		});
+	</script>
+</head>
+<body>
+	<div ng-app="myapp" ng-controller="c1">
+		<p>  <b> NgClick </b> </p>
+		<button ng-click="clickfun()">Click once</button> <br> <br>
+		<p> <b> NgDbclick. </b></p>
+		<button ng-dblclick="dblclickfun()">Click twice</button> <br> <br>
+		<p> <b> ng-Bind.</b> </p>
+		<p> The value of variable Name is : </p>
+		<u> <p ng-bind="Name"></p> </u>
+	</div>
+
+</body>
+</html>
